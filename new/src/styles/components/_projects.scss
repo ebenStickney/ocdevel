@@ -1,0 +1,36 @@
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.project {
+  display: flex;
+  padding: $m-size;
+  flex-direction: row;
+  justify-content: center;
+
+  img {
+    padding: $m-size 0;
+    max-width: 80px;
+    height: 100px;
+
+  }
+
+}
+
+.blurb-container {
+  width: 66%;
+  padding: $s-size $m-size;
+  .OCD {
+    align-self: flex-end;
+  }
+  .blurb {
+    overflow-y: scroll;
+    max-height: 100px;
+  }
+
+}

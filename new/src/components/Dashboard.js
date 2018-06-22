@@ -75,7 +75,12 @@ class DashboardPage extends React.Component {
                 </div>
                 :
                 <div className="info info-front">
-                  <h1> Highlight Reel </h1>
+                  <div className="highlight-header">
+                    <div className="back-button" onClick={this.handleClick}>
+                      <i className="fas fa-chevron-circle-left fa-3x"></i>
+                    </div>
+                    <h1> Highlight Reel </h1>
+                  </div>
                   <div className="project-container">
                     <div className="project">
                       <img src="/images/MLG-logo-80.jpg" alt="MLG Logo" />
@@ -90,7 +95,7 @@ class DashboardPage extends React.Component {
                       </div>
                     </div>
                     <div className="project">
-                      <img src="/images/habitica-logo-80.png" alt="MLG Logo" />
+                      <img src="/images/habitica-logo-80.png" alt="Habitica Logo" />
                       <div className="blurb-container">
                         <h3>Habitica</h3>
                         <p className="blurb">
@@ -105,7 +110,7 @@ class DashboardPage extends React.Component {
                       </div>
                     </div>
                     <div className="project">
-                      <img src="/images/OCDevel-logo-sq-80.jpg" alt="MLG Logo" />
+                      <img src="/images/OCDevel-logo-sq-80.jpg" alt="OCDevel Logo" />
                         <div className="blurb-container OCD">
                         <h3>Other OCDevel Projects</h3>
                         <ul className="blurb">

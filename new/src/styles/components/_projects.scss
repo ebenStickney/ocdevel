@@ -12,11 +12,13 @@
   padding: $m-size;
   flex-direction: row;
   justify-content: center;
+  width: 100%;
 
   img {
-    padding: $m-size 0;
+    padding: 0;
     max-width: 80px;
-    height: 100px;
+    height: 80px;
+    margin-top: $m-size;
 
   }
 
@@ -29,8 +31,8 @@
     align-self: flex-end;
   }
   .blurb {
-    overflow-y: scroll;
-    max-height: 100px;
+
+
   }
 
 }

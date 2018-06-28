@@ -1,8 +1,8 @@
 .page-container {
   display: flex;
   flex-direction: row;
-  // width: 100vw;
-  // height: 100vh;
+  width: 100vw;
+  height: 100vh;
   background: $dark-blue;
   border-left: 3px solid $ocd-orange;
 
@@ -12,6 +12,12 @@
 .side-container {
  width: 50%;
  padding: $m-size;
+}
+
+.side-container__info {
+  display: flex;
+  flex-direction: column;
+
 }
 
 .side-container__media {
@@ -52,16 +58,12 @@
 
 }
 
-.side-container__info {
-  display: flex;
-  flex-direction: column;
 
-}
 
 .side-container__bio {
   color: $off-white;
   margin: $s-size;
-  padding: $l-size;
+  padding: $s-size;
   font-family: $exo;
   p {
     padding-bottom: $xl-size;
@@ -98,12 +100,20 @@
   }
 }
 
+
+
+
 .stacked-headers {
+  height: 100%;
   color: white;
   margin-left: $s-size;
   font-family: $exo;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
   h3 {
-    padding-top: $xl-size;
+
     color: $ocd-orange;
     font-size: $font-size-header-xl;
   }
@@ -125,17 +135,50 @@
 
 
 //creating translate
-.highlight-header {
+
+.jump-button {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  padding: $m-size;
-  h1 {
-    text-align: center;
-    margin-top: $m-size;
+  justify-content: flex-start;
+  flex-grow: 1;
+  cursor: pointer;
+  color: $ocd-orange;
+  opacity: 0;
+  animation: reveal 1s ease-in-out 2s 1 forwards;
+  h3 {
+    padding-right: $m-size;
+    padding-bottom: $l-size;
+    align-self: flex-start;
   }
+  i {
+    animation: bandf 1.5s ease-in-out 3s infinite alternate;
+  }
+
+
 }
+
+.back-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-grow: 1;
+  cursor: pointer;
+  color: $ocd-orange;
+  opacity: 0;
+  animation: reveal 1s ease-in-out 2s 1 forwards;
+  h3 {
+    padding-right: $m-size;
+    padding-bottom: $l-size;
+    align-self: flex-start;
+  }
+  i {
+    animation: bandf 1.5s ease-in-out 3s infinite alternate;
+  }
+
+
+}
+
+
 .card-container {
   background: $dark-blue;
   height: 100vh;
@@ -154,6 +197,7 @@
   background: $dark-blue;
   width: 100%;
   border-left: 3px solid $ocd-orange;
+  height: 100%;
 
 
 
@@ -163,20 +207,72 @@
  background: $dark-blue;
  display: flex;
  flex-direction: column;
- justify-content:center;
+ justify-content:flex-start;
  align-items: center;
  border-left: 3px solid $ocd-orange;
-
-
- h1 {
-   color: white;
-   margin: 0 auto;
- }
 
 }
 
 
 
+//animations
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bandf {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes border {
+  0% {
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 5px;
+  }
+  25% {
+    border-top: 2px solid $ocd-orange;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 5px;
+  }
+  50% {
+    border-top: 2px solid $ocd-orange;
+    border-left: 2px solid $ocd-orange;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 5px;
+  }
+  75% {
+    border-top: 2px solid $ocd-orange;
+    border-left: 2px solid $ocd-orange;
+    border-bottom: 2px solid $ocd-orange;
+    border-right: none;
+    border-radius: 5px;
+  }
+  100% {
+    border-top: 2px solid $ocd-orange;
+    border-left: 2px solid $ocd-orange;
+    border-bottom: 2px solid $ocd-orange;
+    border-right: 2px solid $ocd-orange;
+    border-radius: 5px;
+  }
+}
 
 //mobile considerations
 
@@ -196,25 +292,36 @@
   }
   .side-container {
     width: 100%;
-    max-height: 50%;
+    height: 50%;
+    margin: auto 0;
 
   }
   .info-back {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    align-content: center;
+    justify-content: space-between;
     border: none;
   }
   .side-container__media {
-    flex-direction: row;
+    flex-direction: column;
     padding: $m-size;
-    justify-content: center;
+    justify-content: space-between;
+    flex-shrink: 2;
+
+
+  }
+  .side-container__bio {
     flex-shrink: 1;
+
+  }
+
+  .side-container__picName {
+    display: flex;
+    flex-direction: row;
   }
   .pic-links {
     padding: $l-size 0;
   }
-  .side-container__bio {
-    flex-shrink: 1;
-  }
+
 }

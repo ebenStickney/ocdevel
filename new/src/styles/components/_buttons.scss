@@ -36,24 +36,6 @@
 }
 
 
-.back-button {
-  cursor: pointer;
-  color: $ocd-orange;
-  padding: $m-size;
-  i {
-    animation: bandf 1s ease-in-out 2s infinite alternate;
-  }
-
-}
-@keyframes bandf {
-  0% {
-    transform: translateX(0px);
-  }
-
-  100% {
-    transform: translateX(15px);
-  }
-}
 
 .button-secondary {
   background-color: #888

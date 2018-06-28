@@ -1,10 +1,40 @@
 .project-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
 
+}
+
+.highlight-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: $m-size;
+  margin: $m-size 0;
+  h1 {
+    text-align: left;
+    margin: $m-size;
+    color: $ocd-orange;
+    flex-grow: 2;
+  }
+}
+
+// Cardstack styling
+.project-container {
+  ul {
+    border-radius: 5px;
+
+
+    li {
+      border-radius: 5px;
+
+
+    }
+  }
 }
 
 .project {
@@ -13,12 +43,14 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  color: $dark-blue;
 
   img {
     padding: 0;
     max-width: 80px;
     height: 80px;
     margin-top: $m-size;
+    border-radius: 5px;
 
   }
 
@@ -32,7 +64,9 @@
   }
   .blurb {
 
-
+  }
+  h3 {
+    margin-top: $l-size;
   }
 
 }

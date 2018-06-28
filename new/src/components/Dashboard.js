@@ -1,9 +1,10 @@
 import React from 'react';
 import { CardStack, Card } from 'react-cardstack';
 
+
 class DashboardPage extends React.Component {
   state = {
-    hasClicked: false
+    hasClicked: true
   }
 
   handleClick = () => {
@@ -15,28 +16,27 @@ class DashboardPage extends React.Component {
   render() {
     return (
       <div className="page-container">
+
           <div className="side-container side-container__info">
                 <div className="stacked-headers">
+                  <div className="stacked-headers-box">
                     <h3> OCDevel </h3>
-                    <br />
-                    <br />
+                  </div>
+                  <div className="stacked-headers-box">
                     <h2 className="stacked__name">Machine Learning Developer</h2>
                     <h2>Creator of the Machine Learning Guide Podcast</h2>
+                  </div>
+
                 </div>
 
           </div>
           <div className="side-container card-container">
               {this.state.hasClicked ?
                 <div className="info info-back">
-                    <div className="section side-container__media">
-                    <div className="section button-title">
-                        <div className="back-button" onClick={this.handleClick}>
-                          <i className="fas fa-chevron-circle-left fa-3x"></i>
-                        </div>
+                    <div className="side-container__media">
                         <div className="side-container__title">
                           <h1> About OCDevel's Creator </h1>
                         </div>
-                    </div>
 
                           <div className="pic-links">
                               <div className="side-container__picName">
@@ -58,8 +58,11 @@ class DashboardPage extends React.Component {
                              </div>
                             </div>
                      </div>
-                    <div className="section side-container__bio">
-
+                    <div className="side-container__bio">
+                        <div className="jump-button" onClick={this.handleClick}>
+                          <h3>Recent Projects</h3>
+                          <i className="fas fa-play fa-2x"></i>
+                        </div>
                         <p>
                           I am a full-stack Senior JavaScript developer and
                           has spent 10 years in web & mobile. I am focused on Node,
@@ -72,7 +75,8 @@ class DashboardPage extends React.Component {
                            "bonafide singularitarian". Available starting April for
                            remote work in React, Angular / Ionic, Node, and/or Python.
                         </p>
-                    </div>
+                      </div>
+
                 </div>
                 :
                 <div className="info info-front">
@@ -89,11 +93,14 @@ class DashboardPage extends React.Component {
                     	background='#0c1720'
                     	hoverOffset={25}>
 
-                    	<Card background='#0c1720'>
+                    	<Card background='#4C8077'>
                         <div className="project">
                           <img src="/images/MLG-logo-80.jpg" alt="MLG Logo" />
                           <div className="blurb-container">
                             <h3>Machine Learning Podcast</h3>
+                            <br />
+                            <br />
+
                             <p className="blurb">
                               This series aims to teach you the high level fundamentals of machine learning
                               from A to Z. We discuss languages and frameworks, deep learning, and more.
@@ -104,34 +111,40 @@ class DashboardPage extends React.Component {
                         </div>
                     	</Card>
 
-                    	<Card background='#0c1720'>
+                    	<Card background='#C4FCF0'>
                         <div className="project">
                           <img src="/images/habitica-logo-80.png" alt="Habitica Logo" />
                           <div className="blurb-container">
                             <h3>Habitica</h3>
+                              <br />
+                              <br />
+
                             <p className="blurb">
-                               I built the website (Angular, Node / Express, Mongo),
-                               mobile apps (Ionic / Cordova, iOS, Android), and Chrome Extension.
+                               I built the website, mobile apps, and Chrome Extension.
                                Managed dev-ops on Heroku and Amazon Web Services.
                                This was a deep-dive into scalability, marketing, fundraising, hiring, and more.
-                               I managed an open source community of 200+ contributors (github.com/habitrpg/habitrpg).
+                               I managed an open source community of 200+ contributors.
                                Was a one-man-band running this 800k+ user-base for 1.5y before hiring.
-                               Lots of startup lessons to bear!
+
                             </p>
                           </div>
                         </div>
                     	</Card>
-                      <Card background='#0c1720'>
+                      <Card background='#4C8077'>
                         <div className="project">
                           <img src="/images/OCDevel-logo-sq-80.jpg" alt="OCDevel Logo" />
                             <div className="blurb-container OCD">
                             <h3>Other OCDevel Projects</h3>
-                            <ul className="blurb">
-                              <li>Bitcoin Trading Bot </li>
-                              <li>ExecVision</li>
-                              <li>Jobpig</li>
-                              <li>Humana</li>
-                            </ul>
+                              <br />
+                              <br />
+
+                            <p className="blurb">
+                              -Bitcoin Trading Bot <br />
+                            -ExecVision <br />
+                          -Jobpig <br />
+                        -Humana <br />
+                          </p>
+
                           </div>
                         </div>
                     	</Card>

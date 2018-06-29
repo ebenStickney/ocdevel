@@ -1,7 +1,7 @@
 import React from 'react';
 import { CardStack, Card } from 'react-cardstack';
 
-
+//bump up headlines.  make into link.  
 class DashboardPage extends React.Component {
   state = {
     hasClicked: true

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import {PageHeader, Panel, Grid, Row, Col, Button, OverlayTrigger, Popover, Glyphicon, Alert,
   FormGroup, InputGroup, FormControl, Modal} from 'react-bootstrap';
-import {Link, browserHistory} from 'react-router';
+import {Link} from 'react-router-dom';
 import {LinkContainer} from 'react-router-bootstrap';
 import ReactMarkdown from 'react-markdown';
 import moment from 'moment';
@@ -14,6 +15,11 @@ import { faUnlock } from '@fortawesome/free-solid-svg-icons';
 import podcast from '../content/machine-learning';
 import '../styles/components/podcasts.css';
 const fmt = 'MMM, MM/DD/YYYY';
+
+
+const TestPage = () => (
+  <div>testing...</div>
+);
 
 class Recommend extends Component {
   render() {
@@ -269,4 +275,6 @@ class Series extends Component {
   }
 }
 
-export default {Series, Episodes, Episode, Recommend};
+
+
+export default TestPage;

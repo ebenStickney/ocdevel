@@ -4,7 +4,8 @@ import createHistory from 'history/createBrowserHistory';
 import DashboardPage from "../components/Dashboard";
 import NotFoundPage from "../components/NotFound";
 import Header from '../components/Header';
-import Podcasts from '../components/Podcasts';
+import TestPage from '../components/Podcasts';
+
 
 export const history = createHistory();
 
@@ -21,7 +22,7 @@ const AppRouter = () => (
    />
    <Route
    path="/mlg"
-   component={Podcasts}
+   component={TestPage}
    exact={true}
   />
    <Route

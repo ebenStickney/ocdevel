@@ -72,7 +72,7 @@ let resources = {
   - [Decision tree of algos](http://scikit-learn.org/stable/tutorial/machine_learning_map/) \`picture\``,
     kaggle: `[Kaggle.com](https://www.kaggle.com/)`,
     patreon: `[Patreon](https://www.patreon.com/machinelearningguide)`,
-    rnn_articles: `Overview Articles: 
+    rnn_articles: `Overview Articles:
   - [Unreasonable Effectiveness of RNNs](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) \`article:easy\`
   - [Deep Learning, NLP, and Representations](http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/) \`article:medium\`
   - [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) \`article:medium\``,
@@ -97,7 +97,7 @@ const episodes = [{
   body:
 `Who am I: [Tyler Renelle](https://www.linkedin.com/in/lefnire)
 
-What is this podcast? 
+What is this podcast?
 - "Middle" level overview (deeper than a bird's eye view of machine learning; higher than math equations)
 - No math/programming experience required
 
@@ -169,7 +169,7 @@ What is AI?
   - Image recognition in photographs
   - Spam filtering
   - Prediction of judicial decisions
-  - Targeting online advertisements 
+  - Targeting online advertisements
 - When a technique -> mainstream, no longer AI: "AI effect"
   - Pre-programming
   - Weak AI vs Strong / AGI
@@ -192,7 +192,7 @@ History
 - 1700s-1800s: Statistics & Mathematical decision making
   - Thomas Bayes: reasoning about the probability of events
   - George Boole: logical reasoning / binary algebra
-  - Gottlob Frege: Propositional logic 
+  - Gottlob Frege: Propositional logic
 - 1832: Charles Babbage & Ada Byron / Lovelace: designed Analytical Engine (1832), programmable mechanical calculating machines
 - 1936: Universal Turing Machine
   - Computing Machinery and Intelligence - explored AI!
@@ -256,8 +256,8 @@ The Scare
   teaser: "Overview of machine learning algorithms. Infer/predict -> error/loss -> train/learn. Supervised, unsupervised, reinforcement learning.",
   body:
 `## Resources
-- ${resources.other.tour_ml_algos} 
-- ${resources.audio.master_algorithm} 
+- ${resources.other.tour_ml_algos}
+- ${resources.audio.master_algorithm}
 
 ## Episode
 Learning (ML)
@@ -272,7 +272,7 @@ Learning (ML)
 - Housing cost example
   - "Features"
   - Infer cost based on num_rooms, sq_foot, etc
-  - Error / Loss function 
+  - Error / Loss function
 
 Categories
 - Supervised learning
@@ -296,7 +296,7 @@ Categories
   teaser: "Introduction to the first machine-learning algorithm, the 'hello world' of supervised learning - Linear Regression",
   body:
 `## Resources
-- ${resources.courses.ng_1} 
+- ${resources.courses.ng_1}
 
 ## Episode
 See [Andrew Ng Week 2 Lecture Notes](https://www.coursera.org/learn/machine-learning/resources/QQx8l)
@@ -366,7 +366,7 @@ Come back here after you've finished Ng's course; or learn these resources in ta
 Primers (PDFs)
 - ${resources.other.math_primer}
 
-KhanAcademy: 
+KhanAcademy:
 - ${resources.courses.linear_algebra}
 - ${resources.courses.stats}
 - ${resources.courses.calc}
@@ -377,7 +377,7 @@ Books
 - ${resources.books.calc}
 
 Audio (supplementary material)
-- ${resources.audio.stats} 
+- ${resources.audio.stats}
 - ${resources.audio.calc}
 - ${resources.audio.math_decision_making}
 - ${resources.audio.info_theory}
@@ -401,7 +401,7 @@ Audio (supplementary material)
   teaser: "Deep learning and neural networks. How to stack our logisitic regression units into a multi-layer perceptron.",
   body:
 `## Resources
-- Overview: 
+- Overview:
   - ${resources.other.dl_simplified}
 - Quickstart:
   - ${resources.other.tensorflow_tuts}
@@ -409,7 +409,7 @@ Audio (supplementary material)
   - ${resources.courses.fastai}
   - ${resources.books.handson_tensorflow}
 - Deep-dive theory:
-  - ${resources.books.dl_book}  
+  - ${resources.books.dl_book}
 
 ## Episode
 - Value
@@ -487,7 +487,7 @@ Languages
 - Articles
   - [Best Programming Language for Machine Learning](http://machinelearningmastery.com/best-programming-language-for-machine-learning)
   - [Data Science Job Report 2017](http://r4stats.com/2017/02/28/r-passes-sas)
-  
+
 Frameworks
 - ML libraries
   - Numpy, Pandas, scikit-learn
@@ -641,7 +641,7 @@ Performance evaluation
 - Test set is used for your final score. It can't be used to inform changing your model.
 
 Performance improvement
- 
+
 - Modify hyperpamaraters
 - Data: collect more, fill in missing cells, normalize fields
 - Regularize: reduce overfitting (high variance) and underfitting (high bias)
@@ -689,7 +689,7 @@ Emergence (emergent property)
 
 Computational theory of mind
 - intelligence & consciousness connected / same
-- think: word2vec = understanding? 
+- think: word2vec = understanding?
 - consciousness in scale; does this mean every layer has its own consciousness? Panpsychism. I don't know - just concerned with that which does exhibit intelligence
 - integrated information theory
 - freewill; conscious / awareness center activated after decision made; all the information in place before whole ; westworld
@@ -923,7 +923,7 @@ RNNs
 ## Episode
 
 RNN Review
-  - Vanilla: When words + running context is sufficient. 
+  - Vanilla: When words + running context is sufficient.
     - POS, NER, stocks, weather
   - Bidirectional RNN (BiLSTM): When stuff from right helps too
   - Encoder/decoder or Seq2seq: When you should hear everything first / spin a different way
@@ -952,7 +952,7 @@ Train: backprop through time
 - The usual DL resources (pick one):
   - ${resources.books.dl_book}
   - ${resources.courses.fastai}
-  
+
 ## Custom PC Build
 
 Temporarily removed since the [Titan V](https://www.nvidia.com/en-us/titan/titan-v/) was released, which succeeds my prior 1080ti build recommend. Keep an eye on https://pcpartpicker.com/builds/ for builds with that card (currently none).
@@ -984,7 +984,7 @@ Temporarily removed since the [Titan V](https://www.nvidia.com/en-us/titan/titan
 - The usual DL resources (pick one):
   - ${resources.books.dl_book}
   - ${resources.courses.fastai}
-  
+
 ## Episode
 
 - One-time donations w/ BTC / PayPal
@@ -1181,4 +1181,4 @@ const podcast = {
   useLibsynPlayer: true // false will use html5 player w/ CloudFront file URL
 };
 
-module.exports = podcast;
+export default podcast;

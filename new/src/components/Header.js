@@ -3,11 +3,11 @@ import { Link  } from 'react-router-dom';
 
 
 
-export const Header = () => (
+const Header = () => (
   <header className='header'>
     <div className='content-container'>
       <div className='header__content'>
-        <Link className='header__title' to="/dashboard">
+        <Link className='header__title' to="/">
           <img src="/images/OCDevel-logo-white-75.png" alt="OCDevel Logo" />
         </Link>
         <Link className='link' to='/mlg'>
@@ -16,6 +16,6 @@ export const Header = () => (
       </div>
     </div>
   </header>
-)
+);
 
 export default Header;

@@ -7,7 +7,7 @@ import Title from './Title';
 //bump up headlines.  make into link.
 class DashboardPage extends React.Component {
   state = {
-    hasClicked: true
+    hasClicked: false
   }
 
   handleClick = () => {

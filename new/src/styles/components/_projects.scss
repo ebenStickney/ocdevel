@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding: $m-size;
 
 
 }
@@ -16,10 +17,15 @@
   padding: $m-size;
   margin: $m-size 0;
   h1 {
-    text-align: left;
+    text-align: center;
     margin: $m-size;
     color: $ocd-orange;
     flex-grow: 2;
+  }
+  i {
+    cursor: pointer;
+    color: $ocd-orange;
+    animation: bandf 1s ease-in-out 1s infinite alternate;
   }
 }
 
@@ -40,11 +46,23 @@
 .project {
   display: flex;
   padding: $m-size;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   color: $dark-blue;
+  .project__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    h3 {
+      padding: $s-size;
+      line-height: 1;
+      color: $dark-blue;
+      font-family: $exo;
 
+    }
+  }
   img {
     padding: 0;
     max-width: 80px;
@@ -57,16 +75,20 @@
 }
 
 .blurb-container {
-  width: 66%;
+  width: 100%;
   padding: $s-size $m-size;
+  a {
+    text-decoration: none;
+    color: $dark-blue;
+    font-weight: bold;
+    border-bottom: 2px solid $dark-blue;
+  }
   .OCD {
     align-self: flex-end;
   }
   .blurb {
+    width: 100%;
+  }
 
-  }
-  h3 {
-    margin-top: $l-size;
-  }
 
 }

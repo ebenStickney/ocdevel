@@ -1,16 +1,15 @@
 import React from 'react';
 
 const Tyler = (props) => (
-  <div className="info info-back">
+  <div className="tyler-container">
+      <div className="side-container__title">
+        <h1> About OCDevel's Creator </h1>
+      </div>
       <div className="side-container__media">
-          <div className="side-container__title">
-            <h1> About OCDevel's Creator </h1>
-          </div>
-
             <div className="pic-links">
-                <div className="side-container__picName">
-                     <img className="side-container__profilePic" src="/images/profile_pic.jpeg" alt="Profile picture" />
-                </div>
+
+               <img className="side-container__profilePic" src="/images/profile_pic-2a.jpg" alt="Profile picture" />
+
                <div className="side-container__icons">
                     <a target="_blank" href="https://www.facebook.com/lefnire">
                       <i className="fab fa-facebook-square fa-3x"></i>

@@ -6,15 +6,20 @@
 
 html {
   font-size: 62.5%;
+  min-height: 100vh;
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: $exo;
     font-size: 1.6rem;
     background: white;
     color: white;
     line-height: 1.6;
     font-family: $elec;
+    min-height: 100vh;
+
+
+
 }
 
 button {

@@ -1,0 +1,34 @@
+.stacked-headers {
+  font-family: $exo;
+  width: 100%;
+  height: 100%;
+  .stacked__name {
+    font-weight: 100;
+  }
+  h2 {
+    color: $ocd-orange;
+    font-size: $font-size-header;
+    padding-left: $s-size;
+    margin-bottom: $xl-size;
+  }
+  h1 {
+    line-height: 1;
+    font-size: $font-size-header-xl;
+    padding-left: $s-size;
+    margin: $s-size 0;
+
+  }
+
+}
+
+// Responsive media:
+@media screen and (max-width: $tablet-breakpoint) {
+  .stacked-headers {
+    h2 {
+      font-size: $font-size-header;
+    }
+    h1 {
+      font-size: $font-size-header;
+    }
+  }
+}

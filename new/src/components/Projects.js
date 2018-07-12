@@ -14,17 +14,20 @@ const Projects = (props) => (
     <div className="project-container">
       <CardStack
         height={400}
-        width={500}
+        width={350}
         background='#0c1720'
         hoverOffset={25}>
 
         <Card background='#4C8077'>
           <div className="project">
-            <img src="/images/MLG-logo-80.jpg" alt="MLG Logo" />
-            <div className="blurb-container">
+            <div className="project__header">
+              <img src="/images/MLG-logo-80.jpg" alt="MLG Logo" />
               <h3>Machine Learning Podcast</h3>
+            </div>
+            <div className="blurb-container">
+
               <br />
-              <br />
+
 
               <p className="blurb">
                 This series aims to teach you the high level fundamentals of machine learning
@@ -32,17 +35,22 @@ const Projects = (props) => (
                 At the end of every episode I’ll provide the best-of-the-best resources curated from around the web for
                 you to learn each episode’s details.
               </p>
+              <a href="https://habitica.com" target="_blank">visit</a>
             </div>
           </div>
         </Card>
 
         <Card background='#C4FCF0'>
           <div className="project">
-            <img src="/images/habitica-logo-80.png" alt="Habitica Logo" />
-            <div className="blurb-container">
+            <div className="project__header">
+              <img src="/images/habitica-logo-80.png" alt="Habitica Logo" />
               <h3>Habitica</h3>
+            </div>
+
+            <div className="blurb-container">
+
                 <br />
-                <br />
+
 
               <p className="blurb">
                  I built the website, mobile apps, and Chrome Extension.
@@ -52,16 +60,20 @@ const Projects = (props) => (
                  Was a one-man-band running this 800k+ user-base for 1.5y before hiring.
 
               </p>
+              <a href="https://habitica.com" target="_blank">visit</a>
             </div>
           </div>
         </Card>
         <Card background='#4C8077'>
           <div className="project">
-            <img src="/images/OCDevel-logo-sq-80.jpg" alt="OCDevel Logo" />
-              <div className="blurb-container OCD">
+            <div className="project__header">
+              <img src="/images/OCDevel-logo-sq-80.jpg" alt="OCDevel Logo" />
               <h3>Other OCDevel Projects</h3>
+            </div>
+              <div className="blurb-container OCD">
+
                 <br />
-                <br />
+
 
               <p className="blurb">
                 -Bitcoin Trading Bot <br />

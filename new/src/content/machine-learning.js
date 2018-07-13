@@ -1181,4 +1181,4 @@ const podcast = {
   useLibsynPlayer: true // false will use html5 player w/ CloudFront file URL
 };
 
-export default podcast;
+export {resources, episodes, podcast};

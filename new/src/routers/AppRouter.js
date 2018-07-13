@@ -5,6 +5,7 @@ import DashboardPage from "../components/Dashboard";
 import NotFoundPage from "../components/NotFound";
 import Header from '../components/Header';
 import TestPage from '../components/Podcasts';
+import Episodes from '../components/Episodes';
 
 
 export const history = createHistory();
@@ -22,7 +23,7 @@ const AppRouter = () => (
    />
    <Route
    path="/mlg"
-   component={TestPage}
+   component={Episodes}
    exact={true}
   />
    <Route

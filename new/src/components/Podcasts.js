@@ -17,9 +17,9 @@ import '../styles/components/podcasts.css';
 const fmt = 'MMM, MM/DD/YYYY';
 
 
-const TestPage = () => (
-  <div>testing...</div>
-);
+
+
+
 
 class Recommend extends Component {
   render() {
@@ -277,4 +277,4 @@ class Series extends Component {
 
 
 
-export default TestPage;
+export default Recommend;

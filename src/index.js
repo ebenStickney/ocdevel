@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import { Router, Route, browserHistory, IndexRoute, Redirect } from 'react-router';
+import { Router, Route, IndexRoute, Redirect, Switch } from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory';
 import ReactGA from 'react-ga';
 
 import App from './components/App';
@@ -21,15 +22,20 @@ function logPageView() {
   ReactGA.pageview(window.location.pathname);
 }
 
-ReactDom.render(<Router history={browserHistory} onUpdate={logPageView}>
-    <Route path="/" component={App}>
-      <Route path="mlg" component={Podcasts.Series}>
-        <Route path="recommend" component={Podcasts.Recommend} />
-        <Route path=":id" component={Podcasts.Episode} />
-        <IndexRoute component={Podcasts.Episodes} />
-      </Route>
-      <IndexRoute component={Home} />
-      <Redirect from="*" to="/mlg"/>
-    </Route>
+const history = createHistory();
+
+ReactDom.render(
+  <Router history={history} onUpdate={logPageView}>
+    <Switch>
+      <Route path="/" component={App} exact={true}/>
+      <Route path="/mlg" component={Podcasts.Series}>
+          <Route path="recommend" component={Podcasts.Recommend} />
+          <Route path=":id" component={Podcasts.Episode} />
+          <IndexRoute component={Podcasts.Episodes} />
+        </Route>
+        <IndexRoute component={Home} />
+        <Redirect from="*" to="/mlg"/>
+
+    </Switch>
   </Router>
 , document.getElementById('root'));

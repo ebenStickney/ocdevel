@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {PageHeader, Panel, Grid, Row, Col, Button, OverlayTrigger, Popover, Glyphicon, Alert,
   FormGroup, InputGroup, FormControl, Modal} from 'react-bootstrap';
-import {Link, browserHistory} from 'react-router';
+import {Link, browserHistory} from 'react-router-dom';
 import {LinkContainer} from 'react-router-bootstrap';
 import ReactMarkdown from 'react-markdown';
 import moment from 'moment';

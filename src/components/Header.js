@@ -1,0 +1,27 @@
+import React from 'react';
+import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Modal, Button} from 'react-bootstrap';
+import {LinkContainer} from 'react-router-bootstrap';
+import {Link} from 'react-router';
+
+const Header = (props) => (
+  <Navbar collapseOnSelect style={{marginBottom: 0}}>
+    <Navbar.Header>
+      <Navbar.Brand>
+        <Link to="/">Home</Link>
+      </Navbar.Brand>
+      <Navbar.Toggle />
+    </Navbar.Header>
+    <Navbar.Collapse>
+      <Nav>
+        <LinkContainer to="/mlg">
+          <NavItem >Machine Learning Guide</NavItem>
+        </LinkContainer>
+      </Nav>
+      <Nav pullRight>
+        <NavItem eventKey={1} onClick={props.open}>Contact</NavItem>
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>
+);
+
+export default Header;

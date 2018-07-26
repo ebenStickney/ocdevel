@@ -4,6 +4,7 @@ import {LinkContainer} from 'react-router-bootstrap';
 import {Link} from 'react-router-dom';
 import ContactModal from './ContactModal';
 import Header from './Header';
+import Home from './home/Index';
 
 export default class App extends Component {
   state = {
@@ -22,12 +23,12 @@ export default class App extends Component {
           close={this.close}
          />
        <Header open={this.open} />
-        {this.props.children}
+      <Home />
       </div>
     );
   }
 }
-//children gets replaced with nested Route components.  Reminent from v3.
-//need to clear out nested routes and rebuild app layout.  Replace
+// children gets replaced with nested Route components.  Reminent from v3.
+// need to clear out nested routes and rebuild app layout.  Replace
 // indexroute with exact={true}
-// Figure out what url needs to be for episodes.  
+// Figure out what url needs to be for episodes.

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Modal, Button} from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap';
-import {Link} from 'react-router';
+import {Link} from 'react-router-dom';
 
 const Header = (props) => (
   <Navbar collapseOnSelect style={{marginBottom: 0}}>

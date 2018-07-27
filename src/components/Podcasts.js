@@ -259,10 +259,7 @@ class Series extends Component {
                 {this.sidebar()}
               </Col>
               <Col xs={12} md={8}>
-                //figure this out.
-                // <Route path="recommend" component={Podcasts.Recommend} />
-                // <Route path=":id" component={Podcasts.Episode} />
-                // <IndexRoute component={Podcasts.Episodes} />
+
               </Col>
             </Row>
           </Grid>
@@ -273,3 +270,8 @@ class Series extends Component {
 }
 
 export default {Series, Episodes, Episode, Recommend};
+
+//figure this out.
+// <Route path="recommend" component={Podcasts.Recommend} />
+// <Route path=":id" component={Podcasts.Episode} />
+// <IndexRoute component={Podcasts.Episodes} />

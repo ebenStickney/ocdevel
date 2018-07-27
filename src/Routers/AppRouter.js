@@ -3,9 +3,9 @@ import { Router, Route, Switch } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 // import ReactGA from 'react-ga';
 
-import App from './components/App';
-import Home from './components/home/Index';
-import Podcasts from './components/Podcasts';
+import App from '../components/App';
+import Home from '../components/home/Index';
+import Podcasts from '../components/Podcasts';
 
 
 const history = createHistory();
@@ -33,4 +33,6 @@ const AppRouter = () => (
   </Router>
 
 
-)
+);
+
+export default AppRouter;

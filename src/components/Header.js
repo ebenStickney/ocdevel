@@ -1,6 +1,5 @@
 import React from 'react';
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Modal, Button} from 'react-bootstrap';
-import {LinkContainer} from 'react-router-bootstrap';
 import {Link} from 'react-router-dom';
 
 const Header = (props) => (
@@ -13,9 +12,9 @@ const Header = (props) => (
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav>
-        <LinkContainer to="/mlg">
+        <Link to="/mlg">
           <NavItem >Machine Learning Guide</NavItem>
-        </LinkContainer>
+        </Link>
       </Nav>
       <Nav pullRight>
         <NavItem eventKey={1} onClick={props.open}>Contact</NavItem>

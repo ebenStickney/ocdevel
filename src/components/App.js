@@ -1,7 +1,4 @@
 import React, {Component} from 'react';
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Modal, Button} from 'react-bootstrap';
-import {LinkContainer} from 'react-router-bootstrap';
-import {Link} from 'react-router-dom';
 import ContactModal from './ContactModal';
 import Header from './Header';
 import Home from './home/Index';
@@ -18,10 +15,10 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <ContactModal
+      <ContactModal
           showModal={this.state.showModal}
           close={this.close}
-         />
+       />
        <Header open={this.open} />
       <Home />
       </div>

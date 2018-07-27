@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem, Modal, Button} from 'react-bootstrap';
+import { Modal, Button} from 'react-bootstrap';
 
 
 const ContactModal = (props) =>   (

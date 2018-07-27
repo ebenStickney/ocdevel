@@ -4,8 +4,12 @@ import createHistory from 'history/createBrowserHistory';
 // import ReactGA from 'react-ga';
 
 import App from '../components/App';
-import Home from '../components/home/Index';
-import Podcasts from '../components/Podcasts';
+import Series from '../components/Podcasts';
+import Header from '../components/Header';
+import Episode from '../components/Episode';
+import Recommend from '../components/Recommend';
+import NotFoundPage from '../components/NotFoundPage';
+
 
 
 const history = createHistory();
@@ -27,12 +31,21 @@ const history = createHistory();
 const AppRouter = () => (
   <Router history={history}>
     <Switch>
-      <Route exact path="/" component={App} />
-      <Route exact path="/mlg" component={Podcasts.Series} />
+      <div>
+        <Header />
+        <Route exact path="/" component={App} />
+        <Route exact path="/mlg" component={Series} />
+        <Route path="/mlg/:id" component={Episode} />
+        <Route exact path="/recommend" component={Recommend} />
+
+      </div>
+
     </Switch>
   </Router>
 
 
 );
+
+// <Route component={NotFoundPage} />
 
 export default AppRouter;

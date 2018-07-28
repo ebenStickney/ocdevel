@@ -1,0 +1,94 @@
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: $m-size;
+
+
+}
+
+.highlight-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: $m-size;
+  margin: $m-size 0;
+  h1 {
+    text-align: center;
+    margin: $m-size;
+    color: $ocd-orange;
+    flex-grow: 2;
+  }
+  i {
+    cursor: pointer;
+    color: $ocd-orange;
+    animation: bandf 1s ease-in-out 1s infinite alternate;
+  }
+}
+
+// Cardstack styling
+.project-container {
+  ul {
+    border-radius: 5px;
+
+
+    li {
+      border-radius: 5px;
+
+
+    }
+  }
+}
+
+.project {
+  display: flex;
+  padding: $m-size;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  color: $dark-blue;
+  .project__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    h3 {
+      padding: $s-size;
+      line-height: 1;
+      color: $dark-blue;
+      font-family: $exo;
+
+    }
+  }
+  img {
+    padding: 0;
+    max-width: 80px;
+    height: 80px;
+    margin-top: $m-size;
+    border-radius: 5px;
+
+  }
+
+}
+
+.blurb-container {
+  width: 100%;
+  padding: $s-size $m-size;
+  a {
+    text-decoration: none;
+    color: $dark-blue;
+    font-weight: bold;
+    border-bottom: 2px solid $dark-blue;
+  }
+  .OCD {
+    align-self: flex-end;
+  }
+  .blurb {
+    width: 100%;
+  }
+
+
+}

@@ -2,10 +2,9 @@ import React from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 // import ReactGA from 'react-ga';
-
-import App from '../components/App';
+import Dashboard from '../components/Dashboard';
 import Series from '../components/Podcasts';
-import Header from '../components/Header';
+import NewHeader from '../components/NewHeader';
 import Episode from '../components/Episode';
 import Recommend from '../components/Recommend';
 import NotFoundPage from '../components/NotFoundPage';
@@ -32,8 +31,8 @@ const AppRouter = () => (
   <Router history={history}>
     <Switch>
       <div>
-        <Header />
-        <Route exact path="/" component={App} />
+        <NewHeader />
+        <Route exact path="/" component={Dashboard} />
         <Route exact path="/mlg" component={Series} />
         <Route path="/mlg/:id" component={Episode} />
         <Route exact path="/recommend" component={Recommend} />

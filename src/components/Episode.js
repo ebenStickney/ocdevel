@@ -5,7 +5,7 @@ import moment from 'moment';
 import ReactDisqusThread from 'react-disqus-thread';
 import _ from 'lodash';
 import podcast from '../content/machine-learning';
-import './podcasts.css';
+import './podcasts.scss';
 
 
 

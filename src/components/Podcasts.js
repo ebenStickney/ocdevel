@@ -6,7 +6,7 @@ import _ from 'lodash';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/fontawesome-free-brands';
 import podcast from '../content/machine-learning';
-import './podcasts.css';
+import './podcasts.scss';
 import Episodes from './Episodes';
 
 

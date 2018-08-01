@@ -4,7 +4,7 @@ import {Parallax, Background} from 'react-parallax';
 import Jumbotron from './Jumbotron';
 import Portfolio from './Portfolio';
 
-import './home.css';
+import './home.scss';
 
 export default class Home extends Component {
   render() {
@@ -89,4 +89,3 @@ let images = {
   tylerHead: require('../../assets/Tyler/tylerhead.png'),
   cathead: require('../../assets/cat.png')
 };
-

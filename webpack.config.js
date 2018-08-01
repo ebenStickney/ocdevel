@@ -11,8 +11,15 @@ module.exports = {
   },
   module: {
     loaders: [
-      { loader: 'babel', exclude: /node_modules/ },
-      { test: /\.css$/, loader: "style-loader!css-loader" },
+      {
+        loader: 'babel',
+        exclude: /node_modules/ },
+      {
+        test: /\.scss$/,
+        loader: "style-loader!css-loader!sass-loader" },
+      {
+        test:
+      }
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [

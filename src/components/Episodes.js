@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import moment from 'moment';
 import podcast from '../content/machine-learning';
-import './podcasts.css';
 import _ from 'lodash';
 import {Link} from 'react-router-dom';
 import { faUnlock } from '@fortawesome/fontawesome-free-solid';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import './podcasts.scss';
 
 
 

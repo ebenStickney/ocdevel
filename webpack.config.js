@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const PROD = process.env.NODE_ENV === 'production';
 
+
 module.exports = {
   context: __dirname + '/src',
   entry: './index.js',
@@ -16,8 +17,8 @@ module.exports = {
         exclude: /node_modules/ },
       {
         test: /\.scss$/,
-        loader: "style-loader!css-loader!sass-loader" },
-  
+        loaders: ["style-loader", "css-loader", "sass-loader"]},
+
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loaders: [

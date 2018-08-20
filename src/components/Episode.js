@@ -5,12 +5,14 @@ import moment from 'moment';
 import ReactDisqusThread from 'react-disqus-thread';
 import _ from 'lodash';
 import podcast from '../content/machine-learning';
-import './podcasts.scss';
+import './podcasts.css';
 
 
 
 
 const fmt = 'MMM, MM/DD/YYYY';
+
+
 
 
 
@@ -43,9 +45,10 @@ class Episode extends Component {
     // Turn h2s into h3s (h2s make sense standalone, not inlined the website)
     const body = episode.body && episode.body.replace(/##/g, '###');
     return (
-      <div>
-        <Button href={`/mlg`}>&lt; All Episodes</Button>
-        <div>
+      <div className='content-container'>
+        <Button className="button" href={`/mlg`}>&lt; All Episodes</Button>
+
+        <div className='episode-container'>
           <h2>{episode.title}</h2>
           <i>{moment(episode.date).format(fmt)}</i>
           {body? (

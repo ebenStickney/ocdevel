@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ReactDisqusThread from 'react-disqus-thread';
 import {Button} from 'react-bootstrap';
 import podcast from '../content/machine-learning';
-import './podcasts.scss';
+import './podcasts.css';
 
 
 

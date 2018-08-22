@@ -148,19 +148,21 @@ class Series extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="series-container">
         <div className="Series">
           {this.renderHireModal()}
           <PageHeader>{podcast.title}</PageHeader>
           <Grid>
             <Row>
-              <Col xs={12} md={4}>
+              <Col xs={12} md={4} className="mlg-container">
+
                 <div className="logo"><img src={podcast.image} style={{height: 140, width: 140}} alt="podcast"/></div>
                 <div>
                   <p><b>Machine Learning Guide</b> {podcast.body}</p>
                   <p><b>Machine Learning Applied</b> is an exclusive podcast series on practical/applied tech side of the same. Smaller, more frequent episodes. See <a href="https://www.patreon.com/machinelearningguide" target="_blank">Patreon</a> to access this series.</p>
                 </div>
                 {this.sidebar()}
+
               </Col>
               <Col xs={12} md={8}>
                 <Episodes />

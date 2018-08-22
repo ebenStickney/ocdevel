@@ -4,6 +4,7 @@ const Tyler = (props) => (
   <div className="tyler-container">
       <div className="side-container__title">
         <h1> About OCDevel's Creator </h1>
+        
       </div>
       <div className="side-container__media">
             <div className="pic-links">

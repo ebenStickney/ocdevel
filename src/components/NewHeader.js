@@ -20,7 +20,7 @@ const Header = () => (
           <img src="/images/OCDevel-logo-white-75.png" alt="OCDevel Logo" />
         </Link>
         <Link style={{ textDecoration: 'none', color: "white" }} to='/mlg'>
-          <span> Machine Learning Podcast</span>
+          <span> Machine Learning Guide Podcast</span>
         </Link>
 
 

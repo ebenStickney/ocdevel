@@ -40,7 +40,7 @@ class Series extends Component {
 
         <hr/>
 
-        <div className='sidebar-resources' style={{margin: 5}}>
+        <div className='sidebar-resources'>
           {showDonate ? (
             <Panel header="Donate">
               <Button bsStyle="primary" block href="https://www.patreon.com/machinelearningguide" target="_blank">Patreon</Button>
@@ -149,27 +149,23 @@ class Series extends Component {
   render() {
     return (
       <div className="series-container">
-        <div className="Series">
-          {this.renderHireModal()}
-          <PageHeader>{podcast.title}</PageHeader>
-          <Grid>
-            <Row>
-              <Col xs={12} md={4} className="mlg-container">
-
-                <div className="logo"><img src={podcast.image} style={{height: 140, width: 140}} alt="podcast"/></div>
-                <div>
+        {this.renderHireModal()}
+        <h1>Machine Learning Guide Podcast</h1>
+          <div className="series">
+            <div className="mlg-container">
+              <div className="logo"><img src={podcast.image} style={{height: 140, width: 140}} alt="podcast"/></div>
+              <div className="mlg-info">
                   <p><b>Machine Learning Guide</b> {podcast.body}</p>
                   <p><b>Machine Learning Applied</b> is an exclusive podcast series on practical/applied tech side of the same. Smaller, more frequent episodes. See <a href="https://www.patreon.com/machinelearningguide" target="_blank">Patreon</a> to access this series.</p>
-                </div>
+              </div>
                 {this.sidebar()}
 
-              </Col>
-              <Col xs={12} md={8}>
-                <Episodes />
-              </Col>
-            </Row>
-          </Grid>
-        </div>
+            </div>
+            <div className="episodes-container">
+              <Episodes />
+            </div>
+
+          </div>
       </div>
     );
   }

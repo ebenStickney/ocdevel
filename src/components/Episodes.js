@@ -23,20 +23,21 @@ class Episodes extends Component {
     return (
       <div>
         {episodes.slice().reverse().map(e => (
-          <div key={e.guid}>
-
-            <h3>
-              {e.mla? (
-                <a href='https://www.patreon.com/machinelearningguide' target="_blank">{this.title(e)}</a>
-              ) : (
-                <Link to={`/mlg/${e.episode}`}>{this.title(e)}</Link>
-              )}
-            </h3>
-            {e.mla && (
-              <span className='label label-info' style={{marginRight: 10}}><FontAwesomeIcon icon={faUnlock} />  $1/m on Patreon</span>
-            )}
-            <i>{moment(e.date).format(fmt)}</i>
-            <p>{e.teaser}</p>
+          <div className="episodes" key={e.guid}>
+            <div className="episodes-content">
+                <h3>
+                  {e.mla? (
+                    <a href='https://www.patreon.com/machinelearningguide' target="_blank" style={{color: "#ff6a00"}}>{this.title(e)}</a>
+                  ) : (
+                    <Link to={`/mlg/${e.episode}`} style={{color: "#ff6a00"}}>{this.title(e)}</Link>
+                  )}
+                </h3>
+                {e.mla && (
+                  <span className='label label-info' style={{marginRight: 10}}><FontAwesomeIcon icon={faUnlock} />  $1/m on Patreon</span>
+                )}
+                <i>{moment(e.date).format(fmt)}</i>
+                <p>{e.teaser}</p>
+            </div>
           </div>
         ))}
       </div>

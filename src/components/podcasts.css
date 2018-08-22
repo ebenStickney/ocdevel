@@ -28,87 +28,118 @@ html, body {
   padding: 0;
 }
 
-.Series .logo-and-sub {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+
+/* ******* MLG homepage ******** */
+
+.logo  {
+  border-radius: 5px;
+  position: absolute;
+  top: -70px;
+  left: 20px;
+
 }
 
-.Series .logo-and-sub .logo {
-    flex: 1;
+.logo img {
+  border-radius: 10px;
 }
 
-.Series .sub-button-container {
-    flex: 1;
+.series {
+  display: flex;
+  flex: row wrap;
+
 }
 
-.Series .sub-button {
-    display: block;
-    margin: 5px;
-    /*padding: 5px;*/
+
+.series-container {
+  height: 100%;
+  border-left: 2px solid #ff6a00;
 }
 
-.hire-me ul li {
-    margin-bottom: 5px;
-}
-.hire-me ul li a {
-    display: block;
+.series-container h1 {
+  width: 100%;
+  height: 170px;
+  margin: 0;
+  padding: 3rem 1.6rem;
+  text-align: left;
+  font-family: 'Electrolize', sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: black;
+  background: url('/images/broken-bg_edited.jpg');
+  background-size: cover;
 }
 
-.Series {
-  margin: 5px;
+.mlg-info {
+  width: 400px;
+  padding: 1.4rem;
+  margin: 100px 0 0 0;
+  font-family: "Electrolize", sans-serif;
+  font-size: 1.6rem;
 }
 
-/* Episode Page  */
-.content-container div {
-  margin-left: 5px;
+.mlg-container {
+  position: relative;
+
 }
+
+.sub-button-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.4rem;
+}
+
+.episodes-container {
+  padding: 0 1.6rem;
+  margin-top: 1.6rem;
+}
+
+.sidebar-resources {
+  margin-left: 1.4rem;
+}
+
+.episodes {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  background: #D5D5D5;
+
+}
+.episodes-content {
+  padding: 1.6rem;
+  font-family: "Electrolize", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.episodes-content i {
+  font-weight: 700;
+}
+
+/******** Single Episode Pages ********* */
+
+.content-container {
+}
+
+
 .button {
   width: 150px;
-  margin-left: 5px;
+  margin: 1.4rem;
 }
 
 .button a {
   width: 100%;
 }
 
-/* scss stuff
+.episode-container {
+  margin-left: 1.4rem;
+  display: flex;
+  flex: row wrap;
+}
 
-color
-
-$dark-grey: #333;
-$google-blue: #4885ed;
-$dark-blue: #0c1720;
-$off-white: #f7f7f7;
-$grey: #666;
-$deep-red: #770000;
-$hazy-black: #040404;
-$ash-black: #1C2833;
-$ocd-orange: #ff6a00;
-
-//Spacing
-
-$s-size: 1.2rem;
-$m-size: 1.6rem;
-$l-size: 3.2rem;
-$xl-size: 4.8rem;
-$tablet-breakpoint: 1024px;
-$mobile-breakpoint: 480px;
-
-//Font Sizes
-$font-size-small: 1.4rem;
-$font-size-large: 1.8rem;
-$font-size-header: 3.6rem;
-$font-size-header-xl: 4.8rem;
-
-//Google fonts
-$source-code: 'Source Code Pro', monospace;
-$book: 'Goudy Bookletter 1911', serif;
-$elec: 'Electrolize', sans-serif;
-$exo: 'Exo 2', sans-serif;
-
-
-  */
+.player {
+  margin: 1.4rem;
+  padding-top: 3.6rem;
+}
 
 
 
@@ -116,18 +147,18 @@ $exo: 'Exo 2', sans-serif;
 .content-container {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: #fff;
   margin: 0;
   padding: 0;
   border-left: 2px solid #ff6a00;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Electrolize", sans-serif;
 
 }
 
 /******** buttons ***********/
-.button {
+/* .button {
   background-color: #4885ed;
   color: white;
   padding: 1.4rem;
@@ -137,7 +168,7 @@ $exo: 'Exo 2', sans-serif;
   font-size: 1.8rem;
   text-decoration: none;
   line-height: 1;
-}
+} */
 
 /* .button-link {
   background-color: Transparent;
@@ -302,6 +333,11 @@ height: 100%;
   display: none;
 }
 
+.link {
+  text-decoration: none;
+  color: red;
+}
+
   @media screen and (max-width: 480px) {
     .header {
         justify-content: flex-start;
@@ -312,6 +348,7 @@ height: 100%;
     }
     .link {
       display: none;
+      text-decoration: none;
     }
     .menu  {
       display: block;

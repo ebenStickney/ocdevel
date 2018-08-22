@@ -17,11 +17,10 @@ const fmt = 'MMM, MM/DD/YYYY';
 
 
 
-
 class Episode extends Component {
   renderPlayer = (podcast, episode) => {
     if (podcast.useLibsynPlayer) {
-      const embedCode = `<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/${episode.libsynEpisode}/height/90/width/640/theme/custom/autonext/no/thumbnail/yes/autoplay/no/preload/no/no_addthis/no/direction/backward/render-playlist/no/custom-color/87A93A/" height="90" width="640" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>`;
+      const embedCode = `<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/${episode.libsynEpisode}/height/360/width/640/theme/legacy/autonext/no/thumbnail/yes/autoplay/no/preload/no/no_addthis/no/direction/backward/" height="360" width="640" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>`;
       return <div dangerouslySetInnerHTML={{__html: embedCode}} />;
       // Tried massaging the embed-code to React-compliant props, but still getting `Unknown prop __` - so using dangerouslySetInnerHTML instead
       // return <iframe src={`//html5-player.libsyn.com/embed/episode/id/${e.libsynEpisode}/height/90/width/640/theme/custom/autonext/no/thumbnail/no/autoplay/no/preload/no/no_addthis/no/direction/backward/render-playlist/no/custom-color/87A93A/`} style={{border: "none"}} height="90" width="640" scrolling="no" allowFullScreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
@@ -47,18 +46,22 @@ class Episode extends Component {
     return (
       <div className='content-container'>
         <Button className="button" href={`/mlg`}>&lt; All Episodes</Button>
-
         <div className='episode-container'>
-          <h2>{episode.title}</h2>
-          <i>{moment(episode.date).format(fmt)}</i>
-          {body? (
-            <ReactMarkdown source={body} renderers={this.markdownRenderers} />
-          ): (
-            <p>{episode.teaser}</p>
-          )}
+          <div>
+            <h2>{episode.title}</h2>
+            <i>{moment(episode.date).format(fmt)}</i>
+            {body? (
+              <ReactMarkdown source={body} renderers={this.markdownRenderers} />
+            ): (
+              <p>{episode.teaser}</p>
+            )}
+          </div>
+          <div className="player">
+            {this.renderPlayer(podcast, episode)}
+          </div>
         </div>
-        {this.renderPlayer(podcast, episode)}
-        <ReactDisqusThread
+
+        <ReactDisqusThread style={{margin: "1.4rem"}}
           shortname="ocdevel"
           identifier={episode.guid}
           title={`${episode.title} | ${podcast.title}`}

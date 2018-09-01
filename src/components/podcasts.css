@@ -348,6 +348,11 @@ height: 100%;
   color: red;
 }
 
+.header__title img {
+  width: 80px;
+  height: 80px;
+}
+
   @media screen and (max-width: 480px) {
     .header {
         justify-content: flex-start;

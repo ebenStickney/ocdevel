@@ -17,7 +17,7 @@ const Header = () => (
           <i className="fas fa-bars fa-2x"></i>
         </div>
         <Link className='header__title' to="/">
-          <img src="/images/OCDevel-logo-white-75.png" alt="OCDevel Logo" />
+          <img src="/images/OCDevel-svg-white.svg" alt="OCDevel Logo" />
         </Link>
         <Link style={{ textDecoration: 'none', color: "white" }} to='/mlg'>
           <span> Machine Learning Guide Podcast</span>

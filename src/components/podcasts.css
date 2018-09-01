@@ -470,6 +470,8 @@ height: 100%;
 
 .Collapsible__contentInner  img {
   padding: 5px;
+  width: 80px;
+  height: 80px;
 }
 
 .project {

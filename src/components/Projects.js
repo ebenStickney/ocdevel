@@ -38,7 +38,7 @@ const Projects = (props) => (
           )
         })}
         <Collapsible trigger="Other Projects >">
-          <img src="/images/OCDevel-svg-black.svg" alt="OCDevel" />
+          <img src="/images/OCDevel-svg-dark.svg" alt="OCDevel" />
           <p className='blurb'>
             -Bitcoin Trading Bot <br />
             -ExecVision <br />

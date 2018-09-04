@@ -146,6 +146,7 @@ html, body {
   flex-direction: column;
 }
 
+
 .player iframe {
   border: 1px solid #ff6a00;
   background: #D5D5D5;
@@ -351,10 +352,13 @@ height: 100%;
 .MLG-link {
   text-decoration: none;
   color: white;
+  font-weight: bold;
+  font-size: 1.6rem;
 }
 .MLG-link:hover {
   color: #ff6a00;
   text-decoration: none;
+
 }
 
 .header__title img {
@@ -375,33 +379,8 @@ height: 100%;
         align-items: flex-start;
     }
 
-    .header__title img {
-
-    }
-    .MLG-link {
-
-      text-decoration: none;
-    }
-
   }
 
-
-@media screen and (max-width: 480px) {
-  .header.responsive {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .header.responsive.header__title img {
-    display: inline;
-  }
-  .header.responsive.MLG-link {
-    display: inline;
-
-  }
-
-}
 
 
 
@@ -467,12 +446,17 @@ height: 100%;
   font-size: 1.4rem;
   font-weight: 700;
   padding: 7px;
+  cursor: default;
 }
 
 .Collapsible__contentInner  img {
   padding: 5px;
   width: 80px;
   height: 80px;
+}
+
+.Collapsible__contentInner  img:hover {
+  cursor: pointer;
 }
 
 .project {
@@ -482,14 +466,17 @@ height: 100%;
   justify-content: center;
   width: 100%;
   color: #0c1720;
-
-
-
 }
 
 
 .blurb {
   width: 100%;
+}
+
+@media screen and (max-width: 520px) {
+  .Collapsible {
+    width: 300px;
+  }
 }
 /******** title ***********/
 
@@ -652,6 +639,30 @@ height: 100%;
   .side-container__media {
     flex-direction: column;
   }
+}
+
+
+/************ NOT FOUND  ************ */
+.notFound {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 2px solid #ff6a00;
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.6rem;
+
+}
+.notFound-logo {
+  height: 150px;
+  width: 150px;
+}
+
+.notFound-link {
+  font-family: "Exo 2", sans-serif;
+  font-size: 2.4rem;
 }
 
 /* scss stuff

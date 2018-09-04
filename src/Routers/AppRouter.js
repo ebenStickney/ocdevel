@@ -7,7 +7,7 @@ import Series from '../components/Podcasts';
 import NewHeader from '../components/NewHeader';
 import Episode from '../components/Episode';
 import Recommend from '../components/Recommend';
-import NotFoundPage from '../components/NotFoundPage';
+
 
 
 
@@ -32,12 +32,13 @@ const AppRouter = () => (
     <Switch>
       <div>
         <NewHeader />
-        <Route exact path="/" component={Dashboard} />
-        <Route exact path="/mlg" component={Series} />
+        <Route exact={true} path="/" component={Dashboard} />
+        <Route exact={true}  path="/mlg" component={Series} />
         <Route path="/mlg/:id" component={Episode} />
-        <Route exact path="/recommend" component={Recommend} />
+        <Route exact={true} path="/recommend" component={Recommend} />
 
-      </div>
+
+        </div>
 
     </Switch>
   </Router>

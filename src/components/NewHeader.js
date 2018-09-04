@@ -19,7 +19,7 @@ const Header = () => (
         <Link className='header__title' to="/">
           <img src="/images/OCDevel-svg-light.svg" alt="OCDevel Logo" />
         </Link>
-        <Link style={{ textDecoration: 'none', color: "white" }} to='/mlg'>
+        <Link className="MLG-link" to='/mlg'>
           <span> Machine Learning Guide Podcast</span>
         </Link>
 
